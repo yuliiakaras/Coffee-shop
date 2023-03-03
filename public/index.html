@@ -1,43 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Shop</title>
+        <!-- Styles -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <!-- Bootstrap -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+            integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Merienda:wght@400;700&family=Montserrat:wght@100;400;600&display=swap"
+            rel="stylesheet">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark mynav">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/icons/coffee-white.png" alt="logo img">
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="custom-link" aria-current="page" href="#">Coffee house</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="custom-link">Our coffee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="custom-link">For your pleasure</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Greeting -->
+            <section class="greeting">
+                <div class="container">
+                    <div class="greeting__wrapper">
+                        <h1 class="greeting__title">Everything You Love About Coffee</h1>
+                        <div class="divider">
+                            <div class="line"></div>
+                            <img src="./img/icons/coffee.svg" alt="coffee-beans">
+                            <div class="line"></div>
+                        </div>
+                        <div class="greeting__description">
+                            We makes every day full of energy and taste Want to try our beans?
+                        </div>
+                        <div class="button__wrapper">
+                            <button type="button" class="btn btn-outline-light">More</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of greeting -->
+        </header>
+        <!-- End of Header -->
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <!-- About info -->
+        <section class="aboutInfo">
+            <div class="container">
+                <div class="aboutInfo__wrapper">
+                    <h2 class="aboutInfo__title">About Us</h2>
+                    <div class="divider"></div>
+                    <div class="aboutInfo__content">
+                        Extremity sweetness difficult behaviour he of. On disposal of as landlord
+                        horrible. Afraid at highly months do things on at. Situation recommend objection
+                        do intention so questions. As greatly removed calling pleased improve an. Last
+                        ask him cold feel met spot shy want. Children me laughing we prospect answered
+                        followed. At it went is song that held help face. Now residence dashwoods she
+                        excellent you. Shade being under his bed her, Much read on as draw. Blessing for
+                        ignorant exercise any yourself unpacked. Pleasant horrible but confined day end
+                        marriage. Eagerness furniture set preserved far recommend. Did even but nor are
+                        most gave hope. Secure active living depend son repair day ladies now.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of About info -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        <!-- Offer -->
+        <section class="offer">
+            <div class="container">
+                <h2 class="offer__title">Our best</h2>
+                <div class="offer__wrapper">
+
+                    <div class="offer__item">
+                        <div class="offer__item__img">
+                            <img src="./img/coffee-sample-1.png" alt="coffee-1">
+                        </div>
+                        <div class="offer__item__info">
+                            <h3 class="offer__item__title">
+                                Solimo Coffee Beans 2 kg
+                            </h3>
+                            <h3 class="topDish__item__price">10.73$</h3>
+                        </div>
+                    </div>
+                    <div class="offer__item">
+                        <div class="offer__item__img">
+                            <img src="./img/coffee-sample-1.png" alt="coffee-1">
+                        </div>
+                        <div class="offer__item__info">
+                            <h3 class="offer__item__title">
+                                Solimo Coffee Beans 2 kg
+                            </h3>
+                            <h3 class="topDish__item__price">10.73$</h3>
+                        </div>
+                    </div>
+                    <div class="offer__item">
+                        <div class="offer__item__img">
+                            <img src="./img/coffee-sample-1.png" alt="coffee-1">
+                        </div>
+                        <div class="offer__item__info">
+                            <h3 class="offer__item__title">
+                                Solimo Coffee Beans 2 kg
+                            </h3>
+                            <h3 class="topDish__item__price">10.73$</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Offer -->
+        <footer>
+            <div class="container">
+                <div class="footer__wrapper">
+
+                    <img src="./img/icons/coffee-white.png" alt="logo img">
+                    <div class="footer__links">
+                        <ul>
+                            <li>Coffee house</li>
+                            <li>Our coffee</li>
+                            <li>For your pleasure</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- Footer -->
+
+        <!--End of Footer -->
+    </body>
 </html>
