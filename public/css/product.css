@@ -1,0 +1,21 @@
+.product {
+    margin: 70px 0 60px;
+    max-width: 900px;
+}
+
+.product__img img{
+    max-width: 350px;
+    box-shadow:5px 5px 30px 3px lightgrey;
+}
+
+.product__content {
+    /* padding-left: 30px; */
+}
+
+.product__text span {
+    font-weight: 700;
+}
+
+.product__text .price {
+    font-size: 25px;
+}
