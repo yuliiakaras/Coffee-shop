@@ -8,6 +8,7 @@
     width: 120px;
     height: 30px;
     margin-top: 20px;
+    padding-top: 2px;
 }
 
 /* ABOUT */
@@ -29,13 +30,3 @@
     padding-bottom: 10px;
 }
 
-/* OFFER */
-
-.offer {
-    background-image: url("../img/paper.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    text-align: center;
-    padding: 80px 300px 100px;
-}
